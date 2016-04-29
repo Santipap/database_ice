@@ -7,7 +7,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="ice_pbru.s.data_ice.SignUP">
+    tools:context="ice_pbru.s.data_ice.SignUP"
+    android:background="@drawable/horo">
 
     <LinearLayout
         android:orientation="vertical"
@@ -17,7 +18,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Sign Up"
+            android:text="Registration"
             android:id="@+id/textView"
             android:textSize="50sp"
             android:textStyle="bold"
@@ -27,11 +28,14 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="center_horizontal">
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="#98ffffff"
+            android:layout_marginBottom="60dp">
 
             <LinearLayout
                 android:orientation="horizontal"
-                android:layout_width="400dp"
+                android:layout_width="450dp"
                 android:layout_height="wrap_content">
 
                 <TextView
@@ -39,7 +43,9 @@
                     android:layout_height="wrap_content"
                     android:text="Name :"
                     android:id="@+id/textView2"
-                    android:textSize="35sp" />
+                    android:textSize="@dimen/h1"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
 
                 <EditText
                     android:layout_width="match_parent"
@@ -48,20 +54,23 @@
                     android:ems="10"
                     android:id="@+id/editText"
                     android:gravity="center_horizontal"
-                    android:textSize="35sp" />
+                    android:textSize="@dimen/h1" />
             </LinearLayout>
 
             <LinearLayout
                 android:orientation="horizontal"
-                android:layout_width="400dp"
-                android:layout_height="wrap_content">
+                android:layout_width="450dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Sername"
+                    android:text="Sername :"
                     android:id="@+id/textView3"
-                    android:textSize="35sp" />
+                    android:textSize="@dimen/h1"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
 
                 <EditText
                     android:layout_width="match_parent"
@@ -70,20 +79,23 @@
                     android:ems="10"
                     android:id="@+id/editText2"
                     android:gravity="center_horizontal"
-                    android:textSize="35sp" />
+                    android:textSize="@dimen/h1" />
             </LinearLayout>
 
             <LinearLayout
                 android:orientation="horizontal"
-                android:layout_width="400dp"
-                android:layout_height="wrap_content">
+                android:layout_width="450dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Username"
+                    android:text="Username :"
                     android:id="@+id/textView4"
-                    android:textSize="35sp" />
+                    android:textSize="@dimen/h1"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
 
                 <EditText
                     android:layout_width="match_parent"
@@ -92,20 +104,23 @@
                     android:ems="10"
                     android:id="@+id/editText3"
                     android:gravity="center_horizontal"
-                    android:textSize="35sp" />
+                    android:textSize="@dimen/h1" />
             </LinearLayout>
 
             <LinearLayout
                 android:orientation="horizontal"
-                android:layout_width="400dp"
-                android:layout_height="wrap_content">
+                android:layout_width="450dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Password"
+                    android:text="Password :"
                     android:id="@+id/textView5"
-                    android:textSize="35sp" />
+                    android:textSize="@dimen/h1"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
 
                 <EditText
                     android:layout_width="match_parent"
@@ -114,20 +129,23 @@
                     android:ems="10"
                     android:id="@+id/editText4"
                     android:gravity="center_horizontal"
-                    android:textSize="35sp" />
+                    android:textSize="@dimen/h1" />
             </LinearLayout>
 
             <LinearLayout
                 android:orientation="horizontal"
-                android:layout_width="400dp"
-                android:layout_height="wrap_content">
+                android:layout_width="450dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="E-mail"
+                    android:text="E-mail :"
                     android:id="@+id/textView6"
-                    android:textSize="35sp" />
+                    android:textSize="@dimen/h1"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
 
                 <EditText
                     android:layout_width="match_parent"
@@ -136,7 +154,7 @@
                     android:ems="10"
                     android:id="@+id/editText5"
                     android:gravity="center_horizontal"
-                    android:textSize="35sp" />
+                    android:textSize="@dimen/h1" />
 
             </LinearLayout>
         </LinearLayout>
@@ -149,5 +167,9 @@
         android:text="Accept"
         android:id="@+id/button3"
         android:layout_alignParentBottom="true"
-        android:textSize="40sp" />
+        android:textSize="40sp"
+        android:background="#000000"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:onClick="clicksignup" />
 </RelativeLayout>
