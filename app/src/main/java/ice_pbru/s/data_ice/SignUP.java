@@ -36,6 +36,8 @@ public class SignUP extends AppCompatActivity {
         userString = userEditText.getText().toString().trim();
         paswordString = passwordEditText.getText().toString().trim();
         emailString = emailEditText.getText().toString().trim();
+
+
 ///////////////////////
         if (checkSpace()) {
             //have space
@@ -50,9 +52,14 @@ public class SignUP extends AppCompatActivity {
     private void updateValueToSever() {
         String strURL = "http://ice.pbru.ac.th/ICE56/Santipap/addData.php";
         OkHttpClient okHttpClient = new OkHttpClient();
-        RequestBody requestBody = new FormEncodingBuilder().add("isAdd", "true").add("Name", nameString).add("Surname", surnameString)
-                                                            .add("User", userString).add("Password", paswordString).add("Email", emailString)
-                                                            .build();
+        RequestBody requestBody = new FormEncodingBuilder()
+                .add("isAdd", "true")
+                .add("Name", nameString)
+                .add("Surname", surnameString)
+                .add("User", userString)
+                .add("Password", paswordString)
+                .add("Email", emailString)
+                .build();
         Request.Builder builder = new Request.Builder();
         Request request = builder.url(strURL).post(requestBody).build();
 
